@@ -18,7 +18,7 @@
     "test:watch": "jest --watchAll",
     "webpack": "webpack --config ./client/webpack.config.js",
     "lint": "eslint --ext .js,.jsx .",
-    "tailbuild": "tailwindcss build client/styles.css -o public/main.css"
+    "tailbuild": "tailwindcss build client/styles.css -o server/public/main.css"
   },
   "keywords": [
     "frontend"
