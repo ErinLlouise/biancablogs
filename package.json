@@ -17,7 +17,8 @@
     "test": "jest",
     "test:watch": "jest --watchAll",
     "webpack": "webpack --config ./client/webpack.config.js",
-    "lint": "eslint --ext .js,.jsx ."
+    "lint": "eslint --ext .js,.jsx .",
+    "tailbuild": "tailwindcss build client/styles.css -o public/main.css"
   },
   "keywords": [
     "frontend"
@@ -40,8 +41,10 @@
     ]
   },
   "dependencies": {
+    "autoprefixer": "^10.2.6",
     "cors": "^2.8.5",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "tailwindcss": "^2.1.4"
   },
   "devDependencies": {
     "@babel/core": "7.13.1",
