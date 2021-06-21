@@ -5,7 +5,7 @@ function BlogButton () {
   return (
     <>
       <Link to='/blog'>
-        <button className=''>blog</button>
+        <button className='p-10'>blog</button>
       </Link>
     </>
   )

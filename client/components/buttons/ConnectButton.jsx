@@ -5,7 +5,7 @@ function ConnectButton () {
   return (
     <>
       <Link to='/connect'>
-        <button className=''>connect</button>
+        <button className='p-10'>connect</button>
       </Link>
     </>
   )

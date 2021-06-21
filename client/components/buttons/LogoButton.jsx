@@ -5,7 +5,7 @@ function AboutButton () {
   return (
     <>
       <Link to='/'>
-        <img src=''></img>
+        <img src='/images/logo.jpg' className='h-24 p-4'></img>
       </Link>
     </>
   )
