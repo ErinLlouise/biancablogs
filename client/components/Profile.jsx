@@ -11,18 +11,26 @@ function Profile () {
   const [error, setError] = useState('') // ensures user details are correct
 
   const Login = details => {
-    console.log(details)
+    if (details.email === AdminUser.email && details.password === AdminUser.password) {
+      console.log('logged in as admin xo')
+      setUser({
+        name: details.name,
+        email: details.email
+      })
+    } else {
+      setError('details do not match')
+    }
   }
 
   const Logout = () => {
-    console.log('logout')
+    setUser({ name: '', email: '' })
   }
   return (
     <div>
       {(user.email !== '') ? (
         <div>
-          <h1>Welcome, <span>{user.name}</span></h1>
-          <button>logout</button>
+          <h1 className='flex justify-center pt-48'>Welcome,  <span>{user.name}</span></h1>
+          <button className='flex justify-center' onClick={Logout}>logout</button>
         </div>
       ) : (
         <LoginForm Login={Login} error={error}/>
