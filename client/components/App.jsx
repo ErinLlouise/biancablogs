@@ -17,7 +17,6 @@ function App () {
       <Route exact path='/' component={Home} />
       <Route path='/connect' component={Connect} />
       <Route path='/blog' component={Blog} />
-
     </div>
   )
 }
