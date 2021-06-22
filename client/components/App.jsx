@@ -7,6 +7,7 @@ import About from './About'
 import Home from './Home'
 import Connect from './Connect'
 import Blog from './Blog'
+import Footer from './Footer'
 
 function App () {
   return (
@@ -17,6 +18,7 @@ function App () {
       <Route exact path='/' component={Home} />
       <Route path='/connect' component={Connect} />
       <Route path='/blog' component={Blog} />
+      <Footer />
     </div>
   )
 }
