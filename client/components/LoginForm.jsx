@@ -26,7 +26,7 @@ function LoginForm ({ Login, error }) {
             <label htmlFor="passwork">Password:</label>
             <input className='bg-gray-100' type="password" name="password" id="password" onChange={e => setDetails({ ...details, password: e.target.value }) } value={details.password}/>
           </div>
-          <input className="flex justify-center" type="submit" value="log in" />
+          <input className="flex justify-center shadow-lg m-8 p-4 rounded-md bg-white" type="submit" value="log in" />
         </div>
       </form>
     </>

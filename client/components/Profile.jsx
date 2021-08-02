@@ -29,7 +29,7 @@ function Profile () {
     <div>
       {(user.email !== '') ? (
         <div>
-          <h1 className='flex justify-center pt-48'>Welcome,  <span>{user.name}</span></h1>
+          <h1 className='flex justify-center pt-48'>Welcome,  <span> {user.name}</span></h1>
           <button className='flex justify-center' onClick={Logout}>logout</button>
         </div>
       ) : (
