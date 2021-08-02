@@ -8,12 +8,14 @@ import ProfileButton from './buttons/ProfileButton'
 function Header () {
   return (
     <>
-      <div className='flex justify-evenly headline shadow-lg font-serif'>
-        <ProfileButton />
-        <AboutButton />
+      <div className='flex items-center justify-between font-serif text-lg'>
         <LogoButton />
-        <ConnectButton />
-        <BlogButton />
+        <div className='flex'>
+          <ProfileButton />
+          <AboutButton />
+          <ConnectButton />
+          <BlogButton />
+        </div>
       </div>
     </>
   )

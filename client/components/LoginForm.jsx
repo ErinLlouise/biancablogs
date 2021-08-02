@@ -23,10 +23,10 @@ function LoginForm ({ Login, error }) {
             <input className='bg-gray-100' type="email" name="email" id="email" onChange={e => setDetails({ ...details, email: e.target.value }) } value={details.email}/>
           </div>
           <div className="form-group">
-            <label htmlFor="passwork">Password:</label>
+            <label htmlFor="password">Password:</label>
             <input className='bg-gray-100' type="password" name="password" id="password" onChange={e => setDetails({ ...details, password: e.target.value }) } value={details.password}/>
           </div>
-          <input className="flex justify-center shadow-lg m-8 p-4 rounded-md bg-white" type="submit" value="log in" />
+          <input className="flex justify-center m-8 pt-4 pb-4 pl-6 pr-6 rounded-md text-black bg-white shadow-md hover:shadow-lg hover:text-yellow-200 transition ease-out duration-500 font-serif" type="submit" value="log in" />
         </div>
       </form>
     </>
