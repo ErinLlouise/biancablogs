@@ -8,7 +8,7 @@ import ProfileButton from './buttons/ProfileButton'
 function Header () {
   return (
     <>
-      <div className='flex items-center justify-between font-serif text-lg'>
+      <div className='flex items-center justify-between font-serif text-lg bg-transparent'>
         <LogoButton />
         <div className='flex'>
           <ProfileButton />

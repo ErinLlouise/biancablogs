@@ -29,8 +29,13 @@ function Profile () {
     <div>
       {(user.email !== '') ? (
         <div>
-          <h1 className='flex justify-center pt-48'>Welcome,  <span> {user.name}</span></h1>
-          <button className='flex justify-center' onClick={Logout}>logout</button>
+          <h1 className='flex justify-center pt-36 font-hero-font font-serif text-7xl'>Welcome,  <span> {user.name}</span></h1>
+          <h2><em>What would you like to do?</em></h2>
+          <div className='flex justify-center'>
+            <button className='shadow-md hover:shadow-lg m-8 pt-4 pb-4 pl-6 pr-6 rounded-md text-black hover:text-yellow-200 transition ease-out duration-500 font-serif'>submit content</button>
+            <button className='shadow-md hover:shadow-lg m-8 pt-4 pb-4 pl-6 pr-6 rounded-md text-black hover:text-yellow-200 transition ease-out duration-500 font-serif'>update content</button>
+          </div>
+          <button className='fixed inset-x-0 bottom-0' onClick={Logout}>logout</button>
         </div>
       ) : (
         <LoginForm Login={Login} error={error}/>
